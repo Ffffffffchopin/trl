@@ -698,7 +698,7 @@ class GRPOTrainer(Trainer):
         else:
             generation_kwargs = {
                 "max_new_tokens": self.max_completion_length,
-                "do_sample": True,
+                "do_sample": False,
                 "pad_token_id": processing_class.pad_token_id,
                 "bos_token_id": processing_class.bos_token_id,
                 "eos_token_id": processing_class.eos_token_id,
